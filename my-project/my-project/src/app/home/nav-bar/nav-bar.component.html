@@ -1,0 +1,6 @@
+<div class="nav-bar">
+    <a href="#" class="wrap" *ngFor='let image of images' (click)='changeNav(image.id)'>
+        <img class="image" src="{{ image.url_selected }}">
+        <span class="title" id="{{ image.id }}">{{ image.title }}</span>
+    </a>
+</div>
